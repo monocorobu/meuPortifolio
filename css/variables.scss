@@ -1,0 +1,93 @@
+@font-face {
+    font-family: caviarDreams;
+    src: url(../fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: cocogoose;
+    src: url(../fonts/Cocogoose-Pro-Thin-trial.ttf);
+}
+
+@font-face {
+    font-family: helloHoney;
+    src: url(../fonts/hello-honey.otf);
+}
+
+@font-face {
+    font-family: attentic;
+    src: url(../fonts/Attentica-4F-UltraLight.otf);
+}
+
+@font-face {
+    font-family: nameSmille;
+    src: url(../fonts/Name-Smile.otf);
+}
+
+@font-face {
+    font-family: gillSans;
+    src: url(../fonts/Gill-Sans.otf);
+}
+
+@mixin area-titles {
+    color: $primarycolor;
+    font-size: 24pt;
+    font-family: cocogoose;
+}
+
+@mixin backgrond-writing {
+    color: $greycolor;
+    font-family: helloHonney;
+    font-family: 42pt;
+}
+
+@mixin grid {
+    display: grid;
+    max-width: 1440px;
+    max-height: 1024px;
+    grid-template-columns: repeat(12, 70px);
+    column-gap: 32px;
+    justify-content: center;
+    background-color: transparent;
+    height: 1024px;
+}
+
+@mixin grid-start {
+    @include grid;
+    grid-template-rows: .3fr;
+    grid-column-start: 1;
+    grid-column-end: 14;
+    max-height: 795px;
+}
+
+@mixin tags-fundo {
+    font-family: helloHoney;
+    font-size: 42pt;
+    color: $greycolor;
+}
+
+$primarycolor:#ffa815;
+$secundarycolor:#f5bd0e;
+$whitecolor:#f7faff;
+$greycolor:#525252;
+$border-card-color:#3c3c3c;
+$gradientPrimary:linear-gradient(135deg, rgba(82, 82, 82, 1) 45%, rgba(5, 5, 5, 1) 100%);
+@keyframes slide {
+    from {
+        top: 0;
+    }
+    to {
+        top: -265px;
+    }
+}
+
+@keyframes typing {
+    0% {
+        width: 0px;
+    }
+    50% {
+        width: 600px;
+    }
+    100% {
+        width: 0px;
+    }
+}
