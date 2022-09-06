@@ -1,0 +1,67 @@
+.cardsEscolaridade1 {
+    margin-top: 130px;
+    perspective: 500px;
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.cardsEscolaridade2 {
+    margin-top: 130px;
+    perspective: 500px;
+    display: flex;
+    grid-column-start: 6;
+    grid-column-end: 9;
+}
+
+.cardsEscolaridade3 {
+    margin-top: 130px;
+    perspective: 500px;
+    display: flex;
+    grid-column-start: 10;
+    grid-column-end: 13;
+}
+
+.card-escolaridade {
+    width: 237px;
+    max-width: 237px;
+    height: 332px;
+    border: 6px solid $border-card-color;
+    border-radius: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+}
+
+.fundo-curso {
+    background: url('../imagens/fundo-card-cursos.png ');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fundo-tecnica {
+    background: url('../imagens/fundo-card-etec.png ');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-escolaridade:hover {
+    transform: translate(10px) rotateX(0deg) rotateY(30deg);
+}
+
+.card-title {
+    font-family: attentic;
+    font-size: 24pt;
+    color: $whitecolor;
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    transform: translateY(-30deg);
+    transition: transform .5s;
+}
+
+.card-escolaridade:hover .card-title {
+    transform: translateZ(50px);
+    margin-left: 10px;
+}

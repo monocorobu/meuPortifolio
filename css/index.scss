@@ -1,0 +1,250 @@
+    @import "variables";
+    @import "cardEscolaridade";
+    * {
+        margin: 0;
+        border: 0;
+        box-sizing: border-box;
+        /* max-width: 1440px */
+    }
+    
+    body {
+        background: rgb(51, 51, 51);
+        background: linear-gradient(8deg, rgba(51, 51, 51, 1) 39%, rgba(5, 5, 5, 1) 100%);
+    }
+    
+    .container-grid {
+        @include grid;
+    }
+    
+    .tree-rows {
+        grid-template-rows: 319px 275px auto;
+    }
+    
+    .two-rows {
+        grid-template-rows: 480px auto;
+    }
+    
+    .page-top {
+        display: flex;
+        justify-content: center;
+        background: rgb(82, 82, 82);
+        background: linear-gradient(135deg, rgba(82, 82, 82, 1) 45%, rgba(5, 5, 5, 1) 100%);
+        background-image: url('../imagens/herotop.jpg');
+        background-position: center;
+        background-size: 1397px 795px;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 795px;
+    }
+    
+    .hero {
+        @include grid;
+        grid-template-rows: .3fr;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 14;
+        max-height: 795px;
+    }
+    
+    .hero h1 {
+        font-family: CaviarDreams;
+        font-size: 27pt;
+        color: #ffff;
+        margin-top: 2rem;
+        padding-bottom: 20px;
+        grid-column-start: 1;
+        grid-column-end: 14;
+    }
+    
+    .hero h1 i {
+        font-style: normal;
+        padding-bottom: 20px;
+        border-bottom: 2px solid $primarycolor;
+    }
+    /* frase de saudação */
+    /* posição */
+    
+    .hero h2 {
+        grid-column-start: 2;
+        grid-column-end: 14;
+        grid-row-start: 2;
+        height: 20px;
+    }
+    
+    .hero .eu-sou {
+        grid-column-start: 3;
+        grid-column-end: 14;
+        grid-row-start: 2;
+        margin-top: 10%;
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .hero h2 {
+        font-size: 62pt;
+        color: $whitecolor;
+        font-family: attentic;
+        letter-spacing: 5pt;
+        font-weight: lighter;
+    }
+    
+    .hero h2 i {
+        font-style: normal;
+        color: $primarycolor;
+    }
+    
+    .dynamic-txts li {
+        font-family: nameSmille;
+        list-style: none;
+        color: $primarycolor;
+        font-size: 42pt;
+        position: relative;
+        top: 0;
+        animation: slide 15s steps(3) infinite;
+    }
+    
+    .dynamic-txts {
+        margin-left: 15px;
+        height: 70px;
+        line-height: 90px;
+        overflow: hidden;
+        animation: typing 5s steps(24) infinite;
+        border-right: 2px solid $primarycolor;
+    }
+    
+    .page-infos {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+    
+    .page-infos .container-grid {
+        background: rgb(41, 41, 41);
+        background: linear-gradient(7deg, rgba(41, 41, 41, 1) 19%, rgba(7, 7, 7, 1) 100%);
+        height: 638px;
+        width: 100%;
+    }
+    
+    .story-photo {
+        @include grid-start;
+        height: 336px;
+    }
+    
+    .story-photo .abertura,
+    .fechamento {
+        @include tags-fundo;
+        margin-top: 40px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .aberturastyle {
+        @include tags-fundo;
+        margin-top: 30px;
+    }
+    
+    .fechamentostyle {
+        @include tags-fundo;
+        grid-row-start: 2;
+    }
+    
+    .story-photo .aspas {
+        font-family: gillSans;
+        font-size: 59pt;
+        color: $secundarycolor;
+    }
+    
+    .citacao {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        font-family: gillSans;
+        margin-top: -55px;
+        font-size: 14pt;
+        color: $whitecolor;
+    }
+    
+    .story-photo h4 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-top: 10px;
+        font-size: 24pt;
+        color: $greycolor;
+        font-family: attentic;
+    }
+    
+    .fechamento {
+        margin-top: -70px;
+        grid-column-start: 4;
+    }
+    
+    .foto {
+        grid-column-start: 5;
+        grid-column-end: 9;
+        height: 380px;
+        margin-top: -250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .circulo {
+        border: 3px solid $primarycolor;
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+    }
+    
+    .sobre-eu {
+        grid-column-start: 10;
+        grid-column-end: 13;
+        margin-top: -350px;
+        width: auto;
+    }
+    
+    .sobre-eu b {
+        font-size: 42pt;
+        font-family: gillSans;
+        color: $primarycolor;
+        font-weight: 450;
+    }
+    
+    .sobre-eu p {
+        color: $whitecolor;
+        text-align: left;
+        font-size: 12pt;
+        font-family: caviarDreams;
+    }
+    
+    .transicao {
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 3;
+    }
+    
+    .transicao ul {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        list-style: none;
+    }
+    
+    .page-schools {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+    
+    .page-schools .container-grid {
+        margin-top: 90px;
+        height: 638px;
+        width: 100%;
+        background: rgb(51, 51, 51);
+        background: linear-gradient(180deg, rgba(51, 51, 51, 1) 42%, rgba(75, 74, 74, 1) 100%);
+    }
+    
+    .fundo-topo h2 {
+        @include area-titles;
+    }
+    
+    //escolaridade
