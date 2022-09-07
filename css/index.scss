@@ -10,6 +10,7 @@
     body {
         background: rgb(51, 51, 51);
         background: linear-gradient(8deg, rgba(51, 51, 51, 1) 39%, rgba(5, 5, 5, 1) 100%);
+        overflow-x: hidden
     }
     
     .container-grid {
@@ -216,9 +217,10 @@
     }
     
     .transicao {
-        grid-column-start: 1;
-        grid-column-end: 13;
+        grid-column-start: 2;
+        grid-column-end: 12;
         grid-row-start: 3;
+        margin: 0;
     }
     
     .transicao ul {
