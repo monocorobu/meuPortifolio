@@ -105,7 +105,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 130px;
+  margin-top: 180px;
   width: 237px;
   height: 332px;
   perspective: 1000px;
@@ -117,7 +117,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 130px;
+  margin-top: 180px;
   width: 237px;
   height: 332px;
   perspective: 1000px;
@@ -129,7 +129,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 130px;
+  margin-top: 180px;
   width: 237px;
   height: 332px;
   perspective: 1000px;
@@ -182,6 +182,32 @@
   font-size: 12pt;
   color: #f7faff;
   margin: 15px;
+}
+
+.page-oquefaco {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.page-oquefaco .container-grid {
+  margin-top: 0px;
+  height: 638px;
+  width: 100%;
+  background: rgb(75, 75, 74);
+  background: linear-gradient(173deg, rgb(75, 75, 74) 41%, rgb(252, 252, 253) 96%);
+}
+
+.titulo-oquefaco {
+  margin-top: 60px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.titulo-oquefaco h2 {
+  color: #ffa815;
+  font-size: 24pt;
+  font-family: cocogoose;
 }
 
 * {
@@ -432,6 +458,7 @@ body {
 }
 
 .transicao {
+  position: relative;
   grid-column-start: 2;
   grid-column-end: 12;
   grid-row-start: 3;
@@ -453,11 +480,19 @@ body {
 }
 
 .page-schools .container-grid {
-  margin-top: 90px;
+  margin-top: 0px;
   height: 638px;
   width: 100%;
   background: rgb(51, 51, 51);
   background: linear-gradient(180deg, rgb(51, 51, 51) 42%, rgb(75, 74, 74) 100%);
+}
+
+.container-grid .fechamentostyle {
+  margin-top: 50px;
+}
+
+.fundo-topo {
+  margin-top: 60px;
 }
 
 .fundo-topo h2 {

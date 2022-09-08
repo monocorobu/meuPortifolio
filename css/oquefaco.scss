@@ -1,0 +1,23 @@
+.page-oquefaco {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.page-oquefaco .container-grid {
+    margin-top: 0px;
+    height: 638px;
+    width: 100%;
+    background: rgb(75, 75, 74);
+    background: linear-gradient(173deg, rgba(75, 75, 74, 1) 41%, rgba(252, 252, 253, 1) 96%);
+}
+
+.titulo-oquefaco {
+    margin-top: 60px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.titulo-oquefaco h2 {
+    @include area-titles;
+}

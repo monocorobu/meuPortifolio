@@ -1,5 +1,6 @@
     @import "variables";
     @import "cardEscolaridade";
+    @import "oquefaco";
     * {
         margin: 0;
         border: 0;
@@ -217,6 +218,7 @@
     }
     
     .transicao {
+        position: relative;
         grid-column-start: 2;
         grid-column-end: 12;
         grid-row-start: 3;
@@ -231,6 +233,7 @@
         list-style: none;
     }
     
+    //escolaridade
     .page-schools {
         display: flex;
         justify-content: center;
@@ -238,15 +241,23 @@
     }
     
     .page-schools .container-grid {
-        margin-top: 90px;
+        margin-top: 0px;
         height: 638px;
         width: 100%;
         background: rgb(51, 51, 51);
         background: linear-gradient(180deg, rgba(51, 51, 51, 1) 42%, rgba(75, 74, 74, 1) 100%);
     }
     
+    .container-grid .fechamentostyle {
+        margin-top: 50px;
+    }
+    
+    .fundo-topo {
+        margin-top: 60px
+    }
+    
     .fundo-topo h2 {
         @include area-titles;
     }
     
-    //escolaridade
+    //final da escolaridade
