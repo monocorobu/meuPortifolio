@@ -109,16 +109,19 @@
 
         </div>
     </section>
+
+    <!-- escolaridade, parte do conteudo que fala da minha escolaridade -->
+    <!-- é separado em 3 cards (retangulos) giratorios contendo conteudo frente e verso -->
     <section class="page-schools">
 
         <div class="container-grid two-rows ">
             <div class="fundo-topo">
-                <h2>Escolaridade</h2>
+                <h2>ESCOLARIDADE</h2>
                 <div class="aberturastyle"> &lt;DIV&gt;</div><br>
             </div>
 
 
-
+            <!-- card-1 da parte da escolaridade -->
             <input type="checkbox" id="card1" class="switch" />
             <label class="flip-container1" for="card1">
 
@@ -153,18 +156,7 @@
 
             </label>
 
-
-
-
-
-
-
-
-
-
-
-
-
+            <!-- card-2 da parte da escolaridade -->
             <input type="checkbox" id="card2" class="switch" />
             <label class="flip-container2" for="card2">
 
@@ -199,8 +191,7 @@
 
             </label>
 
-
-
+            <!-- card-3 da parte da escolaridade -->
 
             <input type="checkbox" id="card3" class="switch" />
             <label class="flip-container3" for="card3">
@@ -241,10 +232,11 @@
 
     </section>
 
+    <!-- parte do conteudo o que faço -->
     <section class="page-oquefaco">
         <div class="container-grid two-rows ">
             <div class="titulo-oquefaco">
-                <h2>O que eu faço</h2>
+                <h2>O QUE EU FAÇO</h2>
             </div>
 
 
@@ -276,24 +268,49 @@
                 </div>
 
             </div>
+            <a href="#hobs">
+                <div class="card-vivencia hobs">
 
-            <div class="card-vivencia hobs">
+                    <img src="./imagens/darkness-city.jpg" alt="fundo de um card">
+                    <div class="cont-text">
+                        <h2>
+                            Hobs
+                        </h2>
+                        <p>
+                            <br><br>Um pouco das coisas que eu gosto de fazer quando não estou trabalhando.
+                            <button>Ver Mais</button>
+                        </p>
+                    </div>
 
-                <img src="./imagens/darkness-city.jpg" alt="fundo de um card">
-                <div class="cont-text">
-                    <h2>
-                        Hobs
-                    </h2>
-                    <p>
-                        <br><br>Um pouco das coisas que eu gosto de fazer quando não estou trabalhando.
-                        <button>Ver Mais</button>
-                    </p>
+
                 </div>
-
-            </div>
+            </a>
         </div>
 
     </section>
+
+    <section id="hobs" class="page-hobs">
+        <div class="container-grid  ">
+            <div class="titulo-hobs">
+                <h2>HOBS</h2>
+            </div>
+            <div id="carousel-wrapper">
+                <div id="menu">
+                    <div id="current-option">
+                        <span id="current-option-text1" data-previous-text="" data-next-text=""></span>
+                        <span id="current-option-text2" data-previous-text="" data-next-text=""></span>
+                    </div>
+                    <button id="previous-option"></button>
+                    <button id="next-option"></button>
+
+                </div>
+                <div id="image"></div>
+            </div>
+        </div>
+
+
+    </section>
+    <script src="./js/carrousel-hobs.js"></script>
 </body>
 
 </html>
