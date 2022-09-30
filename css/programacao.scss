@@ -1,0 +1,41 @@
+.page-programacao {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.page-programacao {
+    position: absolute;
+    margin-top: 0px;
+    height: 638px;
+    width: 100%;
+}
+
+.programacao-fundo {
+    position: absolute;
+    background-image: url('../imagens/fundo-programação.png');
+    height: 838px;
+    width: 100%;
+    top: calc(100% - 25%);
+    background-size: cover;
+    z-index: 0;
+}
+
+.page-programacao .container-grid {
+    position: relative;
+    top: calc(100% - 80%);
+}
+
+.titulo-programacao {
+    margin-top: 60px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    max-height: 100px
+}
+
+.titulo-programacao h2 {
+    @include area-titles;
+}
+
+@import 'card-programacao';

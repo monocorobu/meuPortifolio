@@ -43,7 +43,7 @@
 @mixin grid {
     display: grid;
     max-width: 1440px;
-    max-height: 1024px;
+    max-height: 638px;
     grid-template-columns: repeat(12, 70px);
     column-gap: 32px;
     justify-content: center;

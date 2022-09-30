@@ -2,6 +2,7 @@
     @import "cardEscolaridade";
     @import "oquefaco";
     @import "hobs.scss";
+    @import "programacao";
     * {
         margin: 0;
         border: 0;
@@ -192,6 +193,16 @@
     }
     
     .circulo {
+        border: 3px solid $primarycolor;
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        background-image: url('../imagens/foto-principal.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .foto-principal {
         border: 3px solid $primarycolor;
         height: 100%;
         width: 100%;

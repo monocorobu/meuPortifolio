@@ -331,11 +331,14 @@
   display: flex;
   justify-content: center;
   width: 100vw;
+  position: absolute;
+  z-index: 1;
 }
 
 .page-hobs {
   margin-top: 0px;
   height: 638px;
+  max-height: 638px;
   width: 100%;
   background: rgb(200, 200, 200);
   background: linear-gradient(167deg, rgb(200, 200, 200) 0%, rgb(247, 250, 255) 28%, rgb(247, 250, 255) 98%);
@@ -344,6 +347,7 @@
 
 .titulo-hobs {
   margin-top: 60px;
+  max-height: 100px;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 4;
@@ -588,6 +592,165 @@
     opacity: 1;
   }
 }
+.page-programacao {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.page-programacao {
+  position: absolute;
+  margin-top: 0px;
+  height: 638px;
+  width: 100%;
+}
+
+.programacao-fundo {
+  position: absolute;
+  background-image: url("../imagens/fundo-programação.png");
+  height: 838px;
+  width: 100%;
+  top: 75%;
+  background-size: cover;
+  z-index: 0;
+}
+
+.page-programacao .container-grid {
+  position: relative;
+  top: 20%;
+}
+
+.titulo-programacao {
+  margin-top: 60px;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  max-height: 100px;
+}
+
+.titulo-programacao h2 {
+  color: #ffa815;
+  font-size: 24pt;
+  font-family: cocogoose;
+}
+
+.card1prog {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+:root {
+  --surface-color: #fff;
+  --curve: 40;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  height: 464px;
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: var(--surface-color);
+  transform: translateY(100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+}
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 0.3em;
+  color: #6A515E;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: "MockFlowFont";
+  font-size: 0.8em;
+  color: #D7BDCA;
+}
+
+.card__status {
+  font-size: 0.8em;
+  color: #D7BDCA;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #D7BDCA;
+  font-family: "MockFlowFont";
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
 * {
   margin: 0;
   border: 0;
@@ -604,7 +767,7 @@ body {
 .container-grid {
   display: grid;
   max-width: 1440px;
-  max-height: 1024px;
+  max-height: 638px;
   grid-template-columns: repeat(12, 70px);
   column-gap: 32px;
   justify-content: center;
@@ -637,7 +800,7 @@ body {
 .hero {
   display: grid;
   max-width: 1440px;
-  max-height: 1024px;
+  max-height: 638px;
   grid-template-columns: repeat(12, 70px);
   column-gap: 32px;
   justify-content: center;
@@ -732,7 +895,7 @@ body {
 .story-photo {
   display: grid;
   max-width: 1440px;
-  max-height: 1024px;
+  max-height: 638px;
   grid-template-columns: repeat(12, 70px);
   column-gap: 32px;
   justify-content: center;
@@ -809,6 +972,16 @@ body {
 }
 
 .circulo {
+  border: 3px solid #ffa815;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  background-image: url("../imagens/foto-principal.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.foto-principal {
   border: 3px solid #ffa815;
   height: 100%;
   width: 100%;
