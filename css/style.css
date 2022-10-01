@@ -608,7 +608,7 @@
 .programacao-fundo {
   position: absolute;
   background-image: url("../imagens/fundo-programação.png");
-  height: 838px;
+  height: 1200px;
   width: 100%;
   top: 75%;
   background-size: cover;
@@ -749,6 +749,14 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
+}
+
+.card h3 {
+  font-family: cocogoose;
+}
+
+.card span {
+  font-family: nameSmille;
 }
 
 * {
