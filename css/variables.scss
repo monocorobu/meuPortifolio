@@ -45,6 +45,7 @@
     max-width: 1440px;
     max-height: 638px;
     grid-template-columns: repeat(12, 70px);
+    grid-template-rows: 1;
     column-gap: 32px;
     justify-content: center;
     background-color: transparent;
@@ -55,7 +56,7 @@
     @include grid;
     grid-template-rows: .3fr;
     grid-column-start: 1;
-    grid-column-end: 14;
+    grid-column-end: 13;
     max-height: 795px;
 }
 

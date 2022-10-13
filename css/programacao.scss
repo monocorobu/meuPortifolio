@@ -4,22 +4,46 @@
     width: 100vw;
 }
 
+
+/* .page-programacao {
+    position: absolute;
+    margin-top: 0px;
+    height: 638px;
+    width: 100%;
+} */
+
 .page-programacao {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -260px;
+    background-image: url('../imagens/fundo-programação.png');
+    height: 1500px;
+    width: 100%;
+    background-size: cover;
+    z-index: 0;
+}
+
+.programacao-fundo {
     position: absolute;
     margin-top: 0px;
     height: 638px;
     width: 100%;
 }
 
-.programacao-fundo {
+
+/* .programacao-fundo {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
     position: absolute;
     background-image: url('../imagens/fundo-programação.png');
-    height: 1200px;
+    height: 1600px;
     width: 100%;
     top: calc(100% - 25%);
     background-size: cover;
     z-index: 0;
-}
+} */
 
 .page-programacao .container-grid {
     position: relative;
@@ -39,3 +63,83 @@
 }
 
 @import 'card-programacao';
+.vermais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+.vermais a {
+    border: 4px solid $whitecolor;
+    color: $whitecolor;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: auto;
+    padding: 12px 32px 12px 82px;
+    position: relative;
+    text-decoration: none;
+}
+
+.vermais a .label,
+.vermais a .icon-arrow {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    perspective: 1000;
+}
+
+.vermais a .label {
+    display: inline-block;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
+    font-family: cocogoose;
+}
+
+.vermais a .icon-arrow {
+    fill: $whitecolor;
+    height: 15px;
+    top: 17px;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1), opacity .4s cubic-bezier(0.86, 0, 0.07, 1);
+    width: 35px;
+}
+
+.vermais a .icon-arrow.before {
+    left: 32px;
+    margin-right: 15px;
+    position: absolute;
+    transform-origin: left center;
+}
+
+.vermais a .icon-arrow.after {
+    margin-left: 15px;
+    opacity: 0;
+    position: absolute;
+    right: 32px;
+    transform: translateX(75%) scaleX(0.1);
+    transform-origin: right center;
+}
+
+.vermais a:hover .label {
+    transform: translateX(-52px);
+}
+
+.vermais a:hover .icon-arrow.before {
+    opacity: 0;
+    transform: translateX(-75%) scaleX(0.1);
+}
+
+.vermais a:hover .icon-arrow.after {
+    opacity: 1;
+    transform: translateX(0) scaleX(1);
+}
+
+.vermais a:active {
+    border-color: #FD6154;
+    color: #FD6154;
+}
+
+.vermais a:active .icon-arrow {
+    fill: #FD6154;
+}

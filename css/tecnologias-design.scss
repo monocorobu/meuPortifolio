@@ -1,0 +1,42 @@
+.page-tecnologias-design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(../imagens/fundo-page-tecnologias-usadas-design.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    height: 650px;
+    top: -165px;
+}
+
+.titulo-tecnologia-design {
+    @include tags-fundo;
+    margin-top: 20px;
+    color: $primarycolor;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    height: 83px;
+}
+
+.titulo-tecnologia-design i {
+    @include tags-fundo;
+    margin-top: 20px;
+    color: $primarycolor;
+    grid-column-start: 12;
+    grid-column-end: 13;
+    grid-row: 4;
+    height: 83px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 62pt;
+}
+
+.page-tecnologias-design .grid-tec i {
+    color: $primarycolor;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 62pt;
+}

@@ -1,0 +1,99 @@
+.titulo-tecnologia-prog {
+    @include tags-fundo;
+    margin-top: 20px;
+    color: black;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    height: 83px;
+}
+
+.grid-tec {
+    grid-template-rows: 130px 250px auto;
+}
+
+.grid-tec i {
+    @include tags-fundo;
+    margin-top: 20px;
+    color: black;
+    grid-column-start: 12;
+    grid-column-end: 13;
+    grid-row: 4;
+    height: 83px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 62pt;
+}
+
+.titulo-tecnologia-prog i {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 62pt;
+}
+
+.page-tecnologia-prog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(../imagens/fundo-page-tecnologias-usadas-prog.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    height: 780px;
+}
+
+.tecnologia-fundo {
+    position: absolute;
+}
+
+.icones__tecnologia__image-html {
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.icones__tecnologia__image-css {
+    grid-row: 2;
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.icones__tecnologia__image-js {
+    grid-row: 2;
+    grid-column-start: 8;
+    grid-column-end: 10;
+}
+
+.icones__tecnologia__image-react {
+    grid-row: 2;
+    grid-column-start: 11;
+    grid-column-end: 13;
+}
+
+
+/* linha de baixo */
+
+.icones__tecnologia__image-electron {
+    grid-row: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.icones__tecnologia__image-sass {
+    grid-row: 3;
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.icones__tecnologia__image-sql {
+    grid-row: 3;
+    grid-column-start: 8;
+    grid-column-end: 10;
+}
+
+.icones__tecnologia__image-php {
+    grid-row: 3;
+    grid-column-start: 11;
+    grid-column-end: 13;
+}
