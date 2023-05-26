@@ -33,7 +33,7 @@ currentOptionImage.style.backgroundImage = "url(" + image_options[i] + ")";
 mainMenu.style.background = color_options[i];
 
 optionNext.onclick = function() {
-    i = i + 1;
+    i = i + 1;    
     i = i % text1_options.length;
     currentOptionText1.dataset.nextText = text1_options[i];
 
