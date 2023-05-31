@@ -3469,7 +3469,7 @@
   .caixa-das-fotos-polaroide {
     display: flex;
     flex-direction: column;
-    width: 900px;
+    max-width: 100vw;
     margin-top: 100px;
     grid-column-start: 1;
     grid-column-end: 6;
@@ -3482,6 +3482,7 @@
     background-color: black;
   }
   .card-polaroide:nth-child(even) {
+    margin-left: 450px;
     background: black;
     align-self: center;
   }
@@ -3742,7 +3743,7 @@
     background-position: center;
     z-index: 1;
     height: 650px;
-    top: -165px;
+    top: -180px;
   }
   .titulo-tecnologia-design {
     font-family: helloHoney;
@@ -3837,6 +3838,8 @@
     z-index: 3;
     margin-top: -167px;
     background-image: url(../imagens/textura-hero-final.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .titulo-contato {
     margin-top: 60px;
@@ -3975,6 +3978,8 @@
     z-index: 3;
     margin-top: -167px;
     background-image: url(../imagens/textura-hero-final.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .titulo-contato {
     margin-top: 60px;
@@ -4536,7 +4541,7 @@ body {
     background: rgb(51, 51, 51);
     background: linear-gradient(8deg, rgb(51, 51, 51) 39%, rgb(5, 5, 5) 100%);
     overflow-x: hidden;
-    min-width: 100vw;
+    max-width: 100vw;
   }
   .container-grid {
     display: grid;
