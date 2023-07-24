@@ -3,6 +3,7 @@
     src: url(../fonts/CaviarDreams.ttf);
 }
 
+
 @font-face {
     font-family: cocogoose;
     src: url(../fonts/Cocogoose-Pro-Thin-trial.ttf);
@@ -27,6 +28,12 @@
     font-family: gillSans;
     src: url(../fonts/Gill-Sans.otf);
 }
+
+@font-face {
+  font-family: gillSansLight;
+  src: url(../fonts/Gill-Sans-Light.otf);
+}
+
 
 @mixin area-titles {
     color: $primarycolor;
