@@ -393,8 +393,8 @@
             <!-- cards que vão falar dos projetos -->
             <!-- card 1 -->
             <div class="card1prog">
-                <ul class="cards">
-                    <li>
+                <ul class="cards" id="cardsProg">
+                    <!-- <li>
                         <a href="" class="card">
                             <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
                             <div class="card__overlay">
@@ -409,56 +409,8 @@
                                 <p class="card__description">Coleção de projetos de front-end que copiei para aprimorar minhas habilidades em programação, explorando diferentes técnicas e abordagens de design.</p>
                             </div>
                         </a>
-                    </li>
-                    <li>
-                        <a href="" class="card">
-                            <img src="https://i.imgur.com/2DhmtJ4.jpg" class="card__image" alt="" />
-                            <div class="card__overlay">
-                                <div class="card__header">
+                    </li> -->
 
-                                    <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
-                                    <div class="card__header-text">
-                                        <h3 class="card__title">Projetos de Desenvolvimento Web</h3>
-                                        
-                                    </div>
-                                </div>
-                                <p class="card__description">Projetos criados com HTML, CSS, JavaScript, React, Angular e outras ferramentas, demonstrando minha capacidade de solucionar problemas.</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="card">
-                            <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-                            <div class="card__overlay">
-                                <div class="card__header">
-
-                                    <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                                    <div class="card__header-text">
-                                        <h3 class="card__title"> Projetos de Automação de Tarefas</h3>
-                                        <span class="card__tagline"></span>
-                                        
-                                    </div>
-                                </div>
-                                <p class="card__description">Projetos que simplificam tarefas repetitivas usando scripts e ferramentas, mostrando minha habilidade em melhorar a eficiência.</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="card">
-                            <img src="https://i.imgur.com/2DhmtJ4.jpg" class="card__image" alt="" />
-                            <div class="card__overlay">
-                                <div class="card__header">
-
-                                    <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
-                                    <div class="card__header-text">
-                                        <h3 class="card__title">Projetos de Automação de Testes</h3>
-                                        
-                                    </div>
-                                </div>
-                                <p class="card__description">Projetos de automação de testes usando ferramentas como Selenium ou Cypress para garantir a qualidade do software e identificar bugs mais rapidamente.</p>
-                            </div>
-                        </a>
-                    </li>
                 </ul>
                 <div class="vermais">
                     <a href="file:///C:/Users/thale/OneDrive/%C3%81rea%20de%20Trabalho/tudo/portifolio/site%20portifolio/projetos_desenvolvimento_web.html">
@@ -517,43 +469,17 @@
             <div class="titulo-design">
                 <h2>DESIGN</h2>
             </div>
-            <div class="caixa-das-fotos-polaroide ">
-                <div class="card-polaroide">
+            <div class="caixa-das-fotos-polaroide " id="cardsDesign">
+
+                <!-- <div class="card-polaroide">
                     <div class="imgBx">
                         <img src="https://images.unsplash.com/photo-1532123675048-773bd75df1b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="images">
                     </div>
                     <div class="details">
                         <h2>SomeOne Famous<br><span>Director</span></h2>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="card-polaroide">
-                    <div class="imgBx">
-                        <img src="https://images.unsplash.com/photo-1549417229-aa67d3263c09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="images">
-                    </div>
-                    <div class="details">
-                        <h2>SomeOne Famous<br><span>Producer</span></h2>
-                    </div>
-                </div>
-
-                <div class="card-polaroide">
-                    <div class="imgBx">
-                        <img src="https://images.unsplash.com/photo-1548094878-84ced0f6896d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="images">
-                    </div>
-                    <div class="details">
-                        <h2>SomeOne Famous<br><span>Actor</span></h2>
-                    </div>
-
-                </div>
-                <div class="card-polaroide">
-                    <div class="imgBx">
-                        <img src="https://images.unsplash.com/photo-1548094878-84ced0f6896d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="images">
-                    </div>
-                    <div class="details">
-                        <h2>SomeOne Famous<br><span>Actor</span></h2>
-                    </div>
-
-                </div>
 
             </div>
         </div>
@@ -652,14 +578,17 @@
         </div>
     </section>
 
+    <footer></footer>
+
 
 
 
     <script src="js/carrousel-hobs.js"></script>
+    <script src="js/adicionar-projeto-prog.js" ></script>
     <!--  JS bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 
 </html>

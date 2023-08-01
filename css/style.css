@@ -23,6 +23,10 @@
   font-family: gillSans;
   src: url(../fonts/Gill-Sans.otf);
 }
+@font-face {
+  font-family: gillSansLight;
+  src: url(../fonts/Gill-Sans-Light.otf);
+}
 @keyframes slide {
   from {
     top: 0;
@@ -1594,6 +1598,8 @@
     text-decoration: none;
   }
   .card__image {
+    /* tamanho é 500 X 114 */
+    object-fit: contain;
     width: 100%;
     height: auto;
   }
@@ -1643,26 +1649,28 @@
     border-radius: 50%;
   }
   .card__title {
+    font-family: gillSansLight;
     font-size: 1em;
+    letter-spacing: 0.1em;
     margin: 0 0 0.3em;
-    color: #6A515E;
+    color: #6a515e;
   }
   .card__tagline {
     display: block;
     margin: 1em 0;
     font-family: "MockFlowFont";
     font-size: 0.8em;
-    color: #D7BDCA;
+    color: #d7bdca;
   }
   .card__status {
     font-size: 0.8em;
-    color: #D7BDCA;
+    color: #d7bdca;
   }
   .card__description {
     padding: 0 2em 2em;
     margin: 0;
-    color: #D7BDCA;
-    font-family: "MockFlowFont";
+    color: #5e4150;
+    font-family: caviarDreams;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -1748,26 +1756,27 @@
     border-radius: 50%;
   }
   .card__title {
+    font-family: gillSansLight;
     font-size: 1em;
     margin: 0 0 0.3em;
-    color: #6A515E;
+    color: #6a515e;
   }
   .card__tagline {
     display: block;
     margin: 1em 0;
     font-family: "MockFlowFont";
     font-size: 0.8em;
-    color: #D7BDCA;
+    color: #d7bdca;
   }
   .card__status {
     font-size: 0.8em;
-    color: #D7BDCA;
+    color: #d7bdca;
   }
   .card__description {
     padding: 0 3em 3em;
     margin: 0;
-    color: #D7BDCA;
-    font-family: "MockFlowFont";
+    color: #5e4150;
+    font-family: caviarDreams;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -1855,27 +1864,28 @@
     border-radius: 50%;
   }
   .card__title {
+    font-family: gillSansLight;
     font-size: 1em;
     margin: 0 0 0.3em;
-    color: #6A515E;
+    color: #6a515e;
   }
   .card__tagline {
     display: block;
     margin: 1em 0;
     font-family: "MockFlowFont";
     font-size: 0.8em;
-    color: #D7BDCA;
+    color: #d7bdca;
   }
   .card__status {
     font-size: 0.8em;
-    color: #D7BDCA;
+    color: #d7bdca;
   }
   .card__description {
     padding: 0 4em 4em;
     margin: 0;
     font-size: 0.8rem;
-    color: #D7BDCA;
-    font-family: "MockFlowFont";
+    color: #5e4150;
+    font-family: caviarDreams;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -2024,6 +2034,8 @@
     text-decoration: none;
   }
   .card__image {
+    /* tamanho é 500 X 114 */
+    object-fit: contain;
     width: 100%;
     height: auto;
   }
@@ -2073,26 +2085,28 @@
     border-radius: 50%;
   }
   .card__title {
+    font-family: gillSansLight;
     font-size: 1em;
+    letter-spacing: 0.1em;
     margin: 0 0 0.3em;
-    color: #6A515E;
+    color: #6a515e;
   }
   .card__tagline {
     display: block;
     margin: 1em 0;
     font-family: "MockFlowFont";
     font-size: 0.8em;
-    color: #D7BDCA;
+    color: #d7bdca;
   }
   .card__status {
     font-size: 0.8em;
-    color: #D7BDCA;
+    color: #d7bdca;
   }
   .card__description {
     padding: 0 2em 2em;
     margin: 0;
-    color: #D7BDCA;
-    font-family: "MockFlowFont";
+    color: #5e4150;
+    font-family: caviarDreams;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -2178,26 +2192,27 @@
     border-radius: 50%;
   }
   .card__title {
+    font-family: gillSansLight;
     font-size: 1em;
     margin: 0 0 0.3em;
-    color: #6A515E;
+    color: #6a515e;
   }
   .card__tagline {
     display: block;
     margin: 1em 0;
     font-family: "MockFlowFont";
     font-size: 0.8em;
-    color: #D7BDCA;
+    color: #d7bdca;
   }
   .card__status {
     font-size: 0.8em;
-    color: #D7BDCA;
+    color: #d7bdca;
   }
   .card__description {
     padding: 0 3em 3em;
     margin: 0;
-    color: #D7BDCA;
-    font-family: "MockFlowFont";
+    color: #5e4150;
+    font-family: caviarDreams;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -2285,27 +2300,28 @@
     border-radius: 50%;
   }
   .card__title {
+    font-family: gillSansLight;
     font-size: 1em;
     margin: 0 0 0.3em;
-    color: #6A515E;
+    color: #6a515e;
   }
   .card__tagline {
     display: block;
     margin: 1em 0;
     font-family: "MockFlowFont";
     font-size: 0.8em;
-    color: #D7BDCA;
+    color: #d7bdca;
   }
   .card__status {
     font-size: 0.8em;
-    color: #D7BDCA;
+    color: #d7bdca;
   }
   .card__description {
     padding: 0 4em 4em;
     margin: 0;
     font-size: 0.8rem;
-    color: #D7BDCA;
-    font-family: "MockFlowFont";
+    color: #5e4150;
+    font-family: caviarDreams;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -2447,6 +2463,8 @@
     text-decoration: none;
   }
   .card__image {
+    /* tamanho é 500 X 114 */
+    object-fit: contain;
     width: 100%;
     height: auto;
   }
@@ -2496,26 +2514,28 @@
     border-radius: 50%;
   }
   .card__title {
+    font-family: gillSansLight;
     font-size: 1em;
+    letter-spacing: 0.1em;
     margin: 0 0 0.3em;
-    color: #6A515E;
+    color: #6a515e;
   }
   .card__tagline {
     display: block;
     margin: 1em 0;
     font-family: "MockFlowFont";
     font-size: 0.8em;
-    color: #D7BDCA;
+    color: #d7bdca;
   }
   .card__status {
     font-size: 0.8em;
-    color: #D7BDCA;
+    color: #d7bdca;
   }
   .card__description {
     padding: 0 2em 2em;
     margin: 0;
-    color: #D7BDCA;
-    font-family: "MockFlowFont";
+    color: #5e4150;
+    font-family: caviarDreams;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -2601,26 +2621,27 @@
     border-radius: 50%;
   }
   .card__title {
+    font-family: gillSansLight;
     font-size: 1em;
     margin: 0 0 0.3em;
-    color: #6A515E;
+    color: #6a515e;
   }
   .card__tagline {
     display: block;
     margin: 1em 0;
     font-family: "MockFlowFont";
     font-size: 0.8em;
-    color: #D7BDCA;
+    color: #d7bdca;
   }
   .card__status {
     font-size: 0.8em;
-    color: #D7BDCA;
+    color: #d7bdca;
   }
   .card__description {
     padding: 0 3em 3em;
     margin: 0;
-    color: #D7BDCA;
-    font-family: "MockFlowFont";
+    color: #5e4150;
+    font-family: caviarDreams;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -2708,27 +2729,28 @@
     border-radius: 50%;
   }
   .card__title {
+    font-family: gillSansLight;
     font-size: 1em;
     margin: 0 0 0.3em;
-    color: #6A515E;
+    color: #6a515e;
   }
   .card__tagline {
     display: block;
     margin: 1em 0;
     font-family: "MockFlowFont";
     font-size: 0.8em;
-    color: #D7BDCA;
+    color: #d7bdca;
   }
   .card__status {
     font-size: 0.8em;
-    color: #D7BDCA;
+    color: #d7bdca;
   }
   .card__description {
     padding: 0 4em 4em;
     margin: 0;
     font-size: 0.8rem;
-    color: #D7BDCA;
-    font-family: "MockFlowFont";
+    color: #5e4150;
+    font-family: caviarDreams;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -3373,6 +3395,7 @@
     background-color: #ffa815;
   }
   .card-polaroide {
+    cursor: pointer;
     margin: 50px;
     position: relative;
     width: 300px;
@@ -3491,6 +3514,7 @@
     background-color: #ffa815;
   }
   .card-polaroide {
+    cursor: pointer;
     margin: 25px;
     position: relative;
     width: 250px;
@@ -3502,6 +3526,7 @@
   .card-polaroide:before,
   .card-polaroide:after {
     content: "";
+    cursor: pointer;
     position: absolute;
     top: 0;
     left: 0;
@@ -3521,6 +3546,7 @@
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   }
   .card-polaroide .imgBx {
+    cursor: pointer;
     position: absolute;
     top: 10px;
     left: 10px;

@@ -23,11 +23,18 @@ body {
   overflow-x: hidden;
 }
 header {
-
   width: 100vw;
   height: 80px;
-  padding: 20px 20px 20px 60px;
+  padding: 25px 20px 20px 60px;
   background-color: #000;
+
+  a {
+    all: unset;
+    cursor: pointer;
+    &:hover {
+      color: $primarycolor !important;
+    }
+  }
 }
 
 main {
@@ -41,37 +48,133 @@ main {
 }
 
 @media (min-width: 1024px) {
-
-  .container-infos{
+  .container-infos {
     width: 50%;
-    background-color: red;
+
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: flex-start;
     justify-content: flex-start;
 
-    h1{
+    h1 {
       font-size: 20pt;
+      color: $primarycolor;
     }
-    h2{
+    h2 {
       font-size: 14pt;
       padding: 20px;
     }
-    .descricao, .detalhes-tecnicos, .design, .datas, .detalhes-tecnicos, .links{
+    .descricao,
+    .detalhes-tecnicos,
+    .design,
+    .datas,
+    .detalhes-tecnicos,
+    .links {
       font-family: gillSansLight;
       font-size: 12pt;
     }
   }
 
-  .container-photos{
+  .container-photos {
     width: 50%;
-    background-color: red;
+
+    h1 {
+      font-size: 20pt;
+      color: $primarycolor;
+    }
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .container-infos {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    h1 {
+      font-size: 14pt;
+      color: $primarycolor;
+    }
+    h2 {
+      font-size: 10pt;
+      padding: 20px;
+    }
+    .descricao,
+    .detalhes-tecnicos,
+    .design,
+    .datas,
+    .detalhes-tecnicos,
+    .links {
+      font-family: gillSansLight;
+      font-size: 12pt;
+    }
+  }
+
+  .container-photos {
+    width: 50%;
+
+    h1 {
+      font-size: 20pt;
+      color: $primarycolor;
+    }
+  }
 }
 
 @media (min-width: 100px) and (max-width: 767px) {
+  header {
+    width: 100vw;
+    height: 40px;
+    padding: 15px 5px 5px 30px;
+    background-color: #000;
+  }
+  main {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .container-infos {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    h1 {
+      font-size: 8pt;
+      color: $primarycolor;
+    }
+    h2 {
+      font-size: 7pt;
+      padding: 20px;
+    }
+    .descricao,
+    .detalhes-tecnicos,
+    .design,
+    .datas,
+    .detalhes-tecnicos,
+    .links {
+      font-family: gillSansLight;
+      font-size: 6pt;
+    }
+  }
+
+  .container-photos {
+    width: 50%;
+
+    h1 {
+      font-size: 10pt;
+      color: $primarycolor;
+    }
+  }
 }

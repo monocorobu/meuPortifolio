@@ -45,6 +45,7 @@
     }
     
     .card-polaroide {
+        cursor:pointer;
         margin: 50px;
         position: relative;
         width: 300px;
@@ -178,6 +179,7 @@
     }
     
     .card-polaroide {
+        cursor: pointer;
         margin: 25px;
         position: relative;
         width: 250px;
@@ -190,6 +192,7 @@
     .card-polaroide:before,
     .card-polaroide:after {
         content: "";
+        cursor: pointer;
         position: absolute;
         top: 0;
         left: 0;
@@ -212,6 +215,7 @@
     }
     
     .card-polaroide .imgBx {
+        cursor: pointer;
         position: absolute;
         top: 10px;
         left: 10px;
